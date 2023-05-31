@@ -1,0 +1,24 @@
+.Patient_box{
+    background-color: var(--accent);
+    margin-left: 20px;
+    border-radius: 10px;
+
+}
+.viewAndNmbr{
+    margin: 5px;
+    font-size: 50px;
+    display: flex;
+    justify-content: flex-end;
+    color: var(--accent1);
+
+}
+.patient-card-image{
+    width: 18%;
+}
+
+.title-dashboard{
+    display: flex;
+    margin-top: -40px;
+    color: var(--accent1);
+}
+

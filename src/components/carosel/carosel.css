@@ -1,0 +1,64 @@
+.product-home-container{
+	margin-top: 7rem;
+}
+
+.product--image {
+	max-width: 100%;
+	height: 100%;
+	object-fit: contain !important;
+}
+.carousel-img-container {
+	display: flex;
+	justify-content: center;
+	height: 16em;
+	width: 100%;
+	/* background-color: red; */
+}
+.card {
+	max-width: 520px;
+	margin: auto 4.2rem;
+	text-align: center;
+}
+
+.nav-link {
+	border: none;
+	display: block;
+	outline: 0;
+	padding: 12px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	color: var(--accent1);
+	background-color: var(--primary);
+	text-align: center;
+	cursor: pointer;
+	width: 100% !important;
+	font-size: 18px;
+}
+
+.nav-link:hover {
+	background-color: var(--accent);
+}
+
+.product-home-title {
+	text-align: center;
+	margin-bottom: 2rem;
+	color: var(--accent1);
+	font-size: 3rem;
+}
+
+.product-home-container {
+	margin-bottom: 30px;
+}
+
+.react-multi-carousel-list {
+	justify-content: center;
+}
+
+.room--name {
+	color: var(--accent1);
+	font-size: 25px;
+}
+
+.room-description {
+	color: var(--accent1);
+	font-size: 20px;
+}

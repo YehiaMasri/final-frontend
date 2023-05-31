@@ -1,0 +1,175 @@
+.contact-container {
+	width: 70%;
+	margin: 50px auto;
+}
+.contact-h3{
+    color: var(--primary);
+}
+.contact-h3-left{
+	color: var(--accent1);
+}
+.contact-contact-box {
+	background: var(--primary);
+	display: flex;
+}
+
+.contact-contact-left {
+	color: var(--primary);
+	border-radius: 10px;
+	flex-basis: 30.5%;
+	padding: 1rem;
+	background:#000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.contact-contact-right {
+	padding: 40px 60px;
+	flex-basis: 60%;
+    background-color: var(--accent1);
+}
+
+.contact-title {
+	margin-bottom: 10px;
+    color: var(--accent1);
+}
+
+.contact-paragraph {
+	margin-bottom: 10px;
+    color: var(--accent1);
+
+}
+
+.contact-input-row {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.contact-input-row .contact-input-group {
+	flex-basis: 45%;
+}
+
+.contact-input {
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid #ccc;
+	outline: none;
+    background-color: transparent;
+	padding-bottom: 5px;
+}
+.contact-input::placeholder{
+    color: var(--primary);
+}
+
+.contact-area {
+	width: 100%;
+	border: none;
+    border-bottom: 1px solid #ccc;
+	outline: none;
+    background-color: transparent;
+	padding: 10px;
+	box-sizing: border-box;
+}
+.contact-area::placeholder{
+    color: var(--primary);
+}
+
+
+.contact-label {
+	display: block;
+    color: var(--primary);
+	margin-bottom: 6px;
+}
+
+.contact-button {
+	background: var(--primary);
+	color: var(--accent1);
+	cursor: pointer;
+	width: 180px;
+	border: none;
+	outline: none;
+	display: block;
+	margin: 0 0 0 auto;
+	height: 35px;
+	/* border-radius: 10px; */
+	margin-top: 20px;
+}
+
+.contact-button:hover {
+	background: var(--accent);
+}
+
+.contact-right .contact-h3 {
+	font-weight: 600;
+	margin-bottom: 30px;
+}
+
+.contact-left .contact-h3 {
+	font-weight: 600;
+	margin-bottom: 30px;
+    color: var(--accent1);
+}
+
+.contact-tr .contact-td {
+	padding-right: 5px;
+	padding-top: 20px;
+	color: var(--accent1);
+}
+.contact-td a {
+	text-decoration: none;
+	color: var(--accent1);
+}
+.contact-td svg {
+	vertical-align: middle;
+}
+.contact-contact-left table { 
+  margin-left: 1rem;
+  color: var(--accent1);
+}
+.contact-contact-left table tr {
+	padding: 0.5rem 0 !important;
+}
+.contact-contact-left table tr td:nth-child(2) a {
+	font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+	.contact-contact-box {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.contact-contact-left,
+	.contact-contact-right {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.contact-contact-right {
+		padding: 0;
+		flex-basis: 60%;
+	}
+
+	.contact-input-row {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.contact-input-group {
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+
+	.contact-label {
+		margin-bottom: 5px;
+	}
+
+	.contact-input,
+	.contact-area {
+		width: 100%;
+		padding: 10px;
+		margin-bottom: 10px;
+	}
+}
