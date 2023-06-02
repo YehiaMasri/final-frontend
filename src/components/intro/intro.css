@@ -30,10 +30,12 @@
 
 .section__title{
     font-size: 35px;
+    color: var(--primary);
 }
 
 .about__description{
     font-size: 20px;
+    color: var(--primary);
 }
 
 .section__title::before{
@@ -45,6 +47,8 @@
 
 .about__btn{
     border:none;
+    margin-left: 400px;
+    margin-top: 25px;
 }
 
 @media screen and (max-width: 768px) {

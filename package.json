@@ -21,6 +21,7 @@
     "framer-motion": "^10.12.16",
     "js-cookie": "^3.0.5",
     "libphonenumber-js": "^1.10.30",
+    "mui-datatables": "^4.3.0",
     "polished": "^4.2.2",
     "react": "^18.2.0",
     "react-cookies": "^0.1.1",

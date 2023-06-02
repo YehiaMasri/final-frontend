@@ -18,12 +18,12 @@ export const SidebarData = [
 		heading: "Admin",
 	},
 	{
-		path: "dashboard-Patient",
+		path: "dashboard-User",
 		icon: PersonIcon,
 		heading: "User",
 	},
 	{
-		path: "dashboard-Treatment",
+		path: "dashboard-Products",
 		icon: AddShoppingCartIcon,
 		heading: "Products",
 	},

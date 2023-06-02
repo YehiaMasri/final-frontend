@@ -8,7 +8,7 @@ function MainDash(props) {
         <div className='main-dashboard'>
         <Sidebar />
         <div className='dashboard-pages'>
-            <Dashboard />
+            
             <Outlet />
         </div>
     </div>

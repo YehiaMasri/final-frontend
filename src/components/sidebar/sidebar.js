@@ -53,7 +53,7 @@ const Sidebar = ({ userData }) => {
           animate={window.innerWidth <= 800 ? `${expanded}` : ""}
         >
           <div className="sidebar-logo">
-            <img src={logo} width="90%" height="80%"/>
+            <img className="logo" src={logo} width="90%" height="80%"/>
           </div>
         
           <div className="side-comp__menu">
@@ -68,7 +68,7 @@ const Sidebar = ({ userData }) => {
                   onClick={() => setSelected(index)}
                 >
                   <item.icon />
-                  <span>{item.heading}</span>
+                  <span className="activee">{item.heading}</span>
                 </NavLink>
               );
             })}

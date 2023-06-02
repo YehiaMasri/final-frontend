@@ -7,7 +7,6 @@ function Product(props) {
     return (
         <div>
             <Navbar />
-            <Hero />
             <Products />
         </div>
     );

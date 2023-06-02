@@ -9,8 +9,9 @@ const Product = () => {
 	const fetchData = async () => {
     setLoading(true)
 		try {
-			const respone = await axios.get(`http://localhost:5000/product`);
+			const respone = await axios.get(`${process.env.REACT_APP_URL}/product/products`);
 			setData(respone.data.docs);
+      console.log(respone.data.docs)
       setLoading(false);
 		} catch (err) {
 			console.log(err);

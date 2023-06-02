@@ -7,6 +7,9 @@ import Home from "./pages/home/home.jsx";
 // Dashboard Componnents
 import MainDash from "./pages/MainDashboard/mainDash";
 import Dashboard from "./pages/Dashboard/dashboard.js";
+import AdminDash from "./pages/adminTable/admin.js";
+import UserDash from "./pages/UserTable/user.js"
+import ProductDash from "./pages/productsTable/product.js"
 //====================
 import Product from "./pages/products/product.jsx";
 import PlayStation from "./pages/playstation/playstationn";
@@ -34,7 +37,7 @@ function App() {
 
 	const userIsLoggedIn = () => {
 		axios
-			.get(`http://localhost:5000/user/is-logged-in`, {
+			.get(`https://final-project-back.onrender.com/user/is-logged-in`, {
 				headers: { access_token: cookie.load("access_token") },
 			})
 			.then((response) => {
@@ -87,13 +90,27 @@ function App() {
 									element={<Entertainmnet />}
 								/>
 								<Route
-									path="/maindash"
+									path="/Dashboard"
 									element={<MainDash />}
-								/>
+								>
+
 								<Route
-									path="/dashboard-home"
+									path="dashboard-home"
 									element={<Dashboard />}
 								/>
+								<Route
+									path="dashboard-Admin"
+									element={<AdminDash />}
+								/>
+								<Route
+									path="dashboard-User"
+									element={<UserDash />}
+								/>
+								<Route
+									path="dashboard-Products"
+									element={<ProductDash />}
+								/>
+								</Route>
 							</Routes>
 						</BrowserRouter>
 					</SidebarStatus.Provider>

@@ -4,14 +4,11 @@ import "./footer.css";
 import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { AiOutlinePhone } from "react-icons/ai";
-// import { MdOutlineLocationOn } from "react-icons/ai";
 import { IoLocationSharp } from "react-icons/io5";
-// import { BsFillEnvelopeFill } from "react-icons/bs";
-import { FaCaretRight } from "react-icons/fa";
 import { FaRegEnvelope } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 
-import image from "../../asset/images/304977202_599891048488227_4165140898872860292_n-removebg-preview-removebg-preview.png";
+import image from "../../asset/images/28499fe0c116f1d47567709cd86e5081.png";
 const Footer = () => {
 	const nodeEnv = process.env.REACT_APP_URL;
 	const [social, setSocial] = useState([]);
@@ -76,7 +73,7 @@ const Footer = () => {
 								className="footer__link"
 								activeClassName="active"
 							>
-								<FaCaretRight className="icon" /> Home
+								 Home
 							</NavLink>
 						</li>
 						<li>
@@ -85,7 +82,7 @@ const Footer = () => {
 								className="footer__link"
 								activeClassName="active"
 							>
-								<FaCaretRight className="icon" /> Menu
+								 Menu
 							</NavLink>
 						</li>
 
@@ -95,7 +92,7 @@ const Footer = () => {
 								className="footer__link"
 								activeClassName="active"
 							>
-								<FaCaretRight className="icon" /> Products
+								 Products
 							</NavLink>
 						</li>
 						<li>
@@ -104,7 +101,7 @@ const Footer = () => {
 								className="footer__link"
 								activeClassName="active"
 							>
-								<FaCaretRight className="icon" /> About-Us
+								 About-Us
 							</NavLink>
 						</li>
 						<li>
@@ -113,7 +110,7 @@ const Footer = () => {
 								className="footer__link"
 								activeClassName="active"
 							>
-								<FaCaretRight className="icon" /> Contact-Us
+								 Contact-Us
 							</NavLink>
 						</li>
 					</ul>
