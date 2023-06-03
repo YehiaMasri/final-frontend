@@ -16,15 +16,15 @@ function Contact(props) {
 	const [loggedIn, setLoggedIn] = useContext(isLoggedIn);
 	const [links, setLinks] = useState(null);
 	const userData = loggedIn
-		? JSON.parse(Cookies.get("user"))
-		: { username: "mahmoud " };
+		// ? JSON.parse(Cookies.get("user"))
+		// : { username: "mahmoud " };
 	const [message, setMessage] = useState({});
 	const form = useRef();
 	const [social, setSocial] = useState([]);
 	const getSocialMedia = async () => {
 		try {
 			const response = await axios.get(
-				"http://localhost:5000/socialmedia"
+				`${process.env.REACT_APP_URL}/socialmedia`
 			);
 			setSocial(response.data.docs);
 			// console.log(response.data.docs)
@@ -59,7 +59,7 @@ function Contact(props) {
 	const handleSendMessage = (e) => {
 		e.preventDefault();
 		axios
-			.post(`http://localhost:5000/message/`, message, {
+			.post(`${process.env.REACT_APP_URL}/message/`, message, {
 				headers: {
 					access_token: Cookies.get("access_token"),
 				},
@@ -80,7 +80,7 @@ function Contact(props) {
 	return (
 		<div>
 			<Navbar />
-			<Hero />
+			{/* <Hero /> */}
 			<div className="contact-container">
 				<h1 className="contact-title">Contact Us</h1>
 				<p className="contact-paragraph">

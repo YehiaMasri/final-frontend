@@ -71,7 +71,7 @@ function Services() {
 									{product.description}
 								</p>
 							)}
-							<NavLink to={product.path} className="nav-link">
+							<NavLink to="/entertainment" className="nav-link">
 								Book a Place
 							</NavLink>
 						</div>

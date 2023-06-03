@@ -3,6 +3,7 @@ import "./register.css";
 import { parsePhoneNumberFromString } from "libphonenumber-js";
 import axios from "axios";
 import cookie from "react-cookies";
+import Navbar from "../navbar/navbar";
 import { isLoggedIn } from "../../App";
 import { Link, Navigate } from "react-router-dom";
 import { useRef, useState, useContext } from "react";
@@ -51,7 +52,7 @@ const Register = () => {
 		formData.append("password", password.current.value);
 		formData.append("image", image.current.files[0]);
 		axios
-			.post(`http://localhost:5000/user/register`, formData)
+			.post(`${process.env.REACT_APP_URL}/register`, formData)
 			.then((response) => {
 				cookie.save("user", JSON.stringify(response.data.response), {
 					maxAge: 5 * 60 * 60 * 1000,
@@ -75,7 +76,8 @@ const Register = () => {
 	};
 	return (
         <>
-            {loggedIn && <Navigate to="/" replace={true} />}
+        <Navbar />
+            {/* {loggedIn && <Navigate to="/" replace={true} />} */}
             <form onSubmit={handleSubmit} className="register-form">
                 <h2 className="register-title">Create an account</h2>
                 <label htmlFor="username" className="register-label">

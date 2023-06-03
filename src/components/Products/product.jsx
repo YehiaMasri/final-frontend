@@ -44,7 +44,7 @@ const Product = () => {
                   <div className="product-container" key={item._id}>
                     <div className="product-image-container">
                       <img
-                        src={`http://localhost:5000/${item.image}`}
+                        src={`${process.env.REACT_APP_URL}/${item.image}`}
                         alt={item.name}
                         className="product-image"
                       />

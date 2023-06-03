@@ -18,8 +18,8 @@ body {
 
 .cup {
     position: relative;
-    width: 220px;
-    height: 180px;
+    /* width: 220px;
+    height: 180px; */
     border: 8px solid #ffefdb;
     box-shadow: 0 0 0 12px #352a22;
     border-radius: 10px 10px 60px 75px;
