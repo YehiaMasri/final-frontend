@@ -110,3 +110,68 @@
   .siCheckButton:hover{
     background-color: var(--accent);
   }
+
+
+  @media only screen and (max-width: 414px) {
+    .searchItem {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+  
+    .siImg {
+      width: 100%;
+      max-width: 200px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+  
+    .siDesc {
+      text-align: center;
+      display: flex;
+      align-items: center;
+    }
+  
+    .siTitle {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+  
+    .siTaxiOp,
+    .siSubtitle {
+      font-size: 16px;
+    }
+  
+    .siCancelOp {
+      font-size: 14px;
+    }
+  
+    .siCancelOpSubtitle {
+      font-size: 12px;
+    }
+  
+    .siDetails {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+  
+    .siRating {
+      margin-bottom: 10px;
+    }
+  
+    .siPrice {
+      font-size: 16px;
+      text-align:center;
+    }
+  
+    .siCheckButton {
+      font-size: 18px;
+    }
+  }
