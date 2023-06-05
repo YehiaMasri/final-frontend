@@ -31,9 +31,9 @@ const IntroSection = () => {
 						create the perfect balance of aroma, taste, and texture
 					</p>
 
-					<a href="/menu" className="btn about__btn">
+					{/* <a href="/menu" className="btn about__btn">
 						Our Menu
-					</a>
+					</a> */}
 				</div>
 			</div>
 		</section>

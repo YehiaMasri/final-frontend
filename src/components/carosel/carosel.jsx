@@ -57,7 +57,7 @@ function Services() {
 				<h1 className="product-home-title">Our Services</h1>
 				<Carousel responsive={responsive}>
 					{Products.map((product) => (
-						<div className="card" key={product.id}>
+						<div className="caro_card" key={product.id}>
 							<div className="carousel-img-container">
 								<img
 									className="product--image"

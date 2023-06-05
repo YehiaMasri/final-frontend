@@ -58,7 +58,7 @@
     margin-bottom: 2rem;
   }
   
-  @media screen and (max-width: 1100px) {
+  @media screen and (max-width: 767px) {
     .hero-container {
       height: 80vh;
     }

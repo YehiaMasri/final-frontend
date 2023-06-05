@@ -175,7 +175,7 @@
 } */
 
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 767px) {
 	.contact-container {
 	  padding: 20px;
 	}

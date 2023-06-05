@@ -33,9 +33,9 @@ function Navbar(props) {
             <NavLink className="a" to="/products">
               <li className="li">Products</li>
             </NavLink>
-            <NavLink className="a" to="/menu">
+            {/* <NavLink className="a" to="/menu">
               <li className="li">Menu</li>
-            </NavLink>
+            </NavLink> */}
             <NavLink className="a" to="/entertainment">
               <li className="li">Entertainment</li>
             </NavLink>
